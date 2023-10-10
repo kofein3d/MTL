@@ -6,7 +6,6 @@
             <meta name="MTL manual" content="width=device-width, initial-scale=1">
             <title>Packshoter manual</title>
             <style>
-
              @font-face {
                             font-family: ISOCPEUR; 
                             src: url(img/isocpeur.ttf); 
@@ -17,7 +16,7 @@
                .content {
                             max-width: 1100px;
                             min-width: 1100px;
-                            min-height: 4300px;
+                            min-height: 1800px;
                             margin: auto;
                             background: #333333;
                             padding: 0px;
@@ -114,59 +113,48 @@
                             box-sizing: border-box;
                         }
             </style>
-
         </head>
-
     <body>
-
         <div class="content">
-
         <h1><img src="img/logo.png" width="1100" ></h1>
-
         <div class="rect txt_cntr_mddl">MTL</div>
-
-        <h2 class="imgCenter"><img src="img/mtlface.png"   ></h2>
-
-
-
+        <h2 class="imgCenter"><img src="img/mtlface.png"></h2>
         <div class="rectmin txt_cntr_mddls">Установка</div>
+        <p> Вариант 1 - Перетащить файл <span> MTL_2.4.mzp </span> во вьюпорт 3dsmax.<br />
+            Вариант 2 - Добавление через меню  Scripting -> Run Script -> <span>MTL_2.4.mzp</span></p>
+        <p> Перед применением рекомендуется перезагрузить 3dsmax. </p>
+        <p> Добавление кнопки на тулбар:<br />
+            Customize -> Customize User Interface -> Toolbar -> Category:Val -> Mat_Tex_Loader</p> 
 
-        <p>Вариант 1 - Перетащить файл <span> MTL_2.4.mzp </span> во вьюпорт 3dsmax.<br />
-        Вариант 2 - Добавление через меню  Scripting -> Run Script -> <span>MTL_2.4.mzp</span></p>
+        <div class="rectmin txt_cntr_mddls">Начало работы</div>
 
-        <p>Перед применением рекомендуется перезагрузить 3dsmax. </p>
-
-        <p>Добавление кнопки на тулбар:<br />
-
-        Customize -> Customize User Interface -> Toolbar -> Category:Val -> Mat_Tex_Loader
-        </p> 
+        <p>
+            Скрипт предназначен для сборки Physical или VrayMat материалов<br />
+            из набора текстур, подготовленных в соответствии с ТЗ.<br />
+        </p>
 
         <div class="rectminy"></div>
+        <p>
+        <span> Physical </span> - создание материала Physical Material (по-умолчанию)<br />
+        <span> Vray </span> - создание материала VrayMat (необходимо согласовывать с менеджером проекта)<br />      
+        <span>Load Textures </span> - выбор набора текстур относящихся к создаваемому материалу<br />
+        <span> Create </span> - подтверждение, что текстры выбраны верно и создание материала<br />
+        <span> Mateditor Slot </span> - вывод материала в Material Editor<br />
+        <span> Clear </span> - очистка выбранных текстур (если выбраны неправильно)<br />
+        <span> Set reflection </span> -  установка значения reflection материала<br />
+        <span> Set refl IOR </span> -  установка значения reflection IOR материала (по умолчанию 1.5)
+        </p>
+        <br /><br />
+        <center>
+        <video controls>
+        <source src="img/mtl_vid.mp4" type="video/mp4" />
+        </video>
+        </center>
+        <br /><br />
+        </div>
 
-
-        <br /><br /><br /><br />
-
-        <p style="position: relative; left: 340px;"> <span>(Продолжение следует...)</span>  </p>
-        <br />
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-    <footer class="footer txt_cntr_mddls"  id="footer">
+        <footer class="footer txt_cntr_mddls"  id="footer">
         kofein3d@gmail.com
         </footer>
-
-
     </body>
     </html>
-
- 
